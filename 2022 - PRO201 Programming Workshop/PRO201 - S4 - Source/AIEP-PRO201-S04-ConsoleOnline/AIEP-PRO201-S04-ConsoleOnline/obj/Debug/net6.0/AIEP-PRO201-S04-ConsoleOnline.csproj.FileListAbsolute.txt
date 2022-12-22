@@ -1,0 +1,15 @@
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/bin/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/bin/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.deps.json
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/bin/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.runtimeconfig.json
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/bin/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.dll
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/bin/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.pdb
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.csproj.AssemblyReference.cache
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.GeneratedMSBuildEditorConfig.editorconfig
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.AssemblyInfoInputs.cache
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.AssemblyInfo.cs
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.csproj.CoreCompileInputs.cache
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.dll
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/refint/AIEP-PRO201-S04-ConsoleOnline.dll
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.pdb
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/AIEP-PRO201-S04-ConsoleOnline.genruntimeconfig.cache
+/Users/esteban/Dev/VisualStudio/AIEP-PRO201-S04-ConsoleOnline/AIEP-PRO201-S04-ConsoleOnline/obj/Debug/net6.0/ref/AIEP-PRO201-S04-ConsoleOnline.dll

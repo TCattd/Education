@@ -1,0 +1,17 @@
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\bin\Debug\net6.0-windows\PRO201-S06-Primos.exe
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\bin\Debug\net6.0-windows\PRO201-S06-Primos.deps.json
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\bin\Debug\net6.0-windows\PRO201-S06-Primos.runtimeconfig.json
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\bin\Debug\net6.0-windows\PRO201-S06-Primos.dll
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\bin\Debug\net6.0-windows\PRO201-S06-Primos.pdb
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.csproj.AssemblyReference.cache
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201_S06_Primos.AppPresentation.resources
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.csproj.GenerateResource.cache
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.AssemblyInfoInputs.cache
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.AssemblyInfo.cs
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.csproj.CoreCompileInputs.cache
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.dll
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\refint\PRO201-S06-Primos.dll
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.pdb
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\PRO201-S06-Primos.genruntimeconfig.cache
+C:\Users\Esteban\Dev\PRO201-S06-Primos\PRO201-S06-Primos\obj\Debug\net6.0-windows\ref\PRO201-S06-Primos.dll

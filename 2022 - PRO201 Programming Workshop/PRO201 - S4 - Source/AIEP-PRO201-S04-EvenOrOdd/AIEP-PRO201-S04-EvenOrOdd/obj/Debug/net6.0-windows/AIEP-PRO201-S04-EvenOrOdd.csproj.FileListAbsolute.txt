@@ -1,0 +1,17 @@
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.csproj.AssemblyReference.cache
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP_PRO201_S04_EvenOrOdd.Form1.resources
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.csproj.GenerateResource.cache
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.AssemblyInfoInputs.cache
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.AssemblyInfo.cs
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.csproj.CoreCompileInputs.cache
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\bin\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.exe
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\bin\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.deps.json
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\bin\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.runtimeconfig.json
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\bin\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.dll
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\bin\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.pdb
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.dll
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\refint\AIEP-PRO201-S04-EvenOrOdd.dll
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.pdb
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\AIEP-PRO201-S04-EvenOrOdd.genruntimeconfig.cache
+C:\Users\Esteban\Dev\AIEP-PRO201-S04-EvenOrOdd\AIEP-PRO201-S04-EvenOrOdd\obj\Debug\net6.0-windows\ref\AIEP-PRO201-S04-EvenOrOdd.dll

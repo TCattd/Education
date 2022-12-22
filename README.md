@@ -1,5 +1,7 @@
 # Education 2022-20XX
 
+Code-only assignments archive.
+
 ## Author
 Esteban Cuevas
 
