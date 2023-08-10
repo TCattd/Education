@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ruth Morales, Karen Contreras, Esteban Cuevas">
+	<title>El Faro</title>
+	<!-- Pico.CSS @ https://picocss.com -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">-->
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header container">
+	<div class="grid">
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/elfaro-logo.png" alt="El Faro Logo" width="100" />
+				<span>El Faro</span>
+			</a>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html" role="button">Inicio</a></li>
+				<li><a href="index-sports.html" role="button">Deportes</a></li>
+				<li><a href="index-business.html" role="button">Negocios</a></li>
+			</ul>
+		</nav>
+	</div>
+</header> <!-- / .header -->
+
+<!-- Main -->
+<main class="news-gallery container">
+	<h1>Noticias</h1>
+
+	<!-- Because the assignment requires us to use a table, we will use a table -->
+	<!-- If this was a real project, we would use a grid. Modern, and responsive -->
+	<table class="grid">
+		<tr>
+			<td>
+				<article class="news-gallery__item">
+					<div class="news-gallery__item__image">
+						<img src='images/129177060_230327_077-credit-trustees-of-the-nhm-london.jpg' alt='Fotografía de un museo con un hueso de dinosaurio' />
+					</div>
+					<div class="news-gallery__item__content">
+						<h2 class="news-gallery__item__title">Gigantic dinosaur skeleton on show in London</h2>
+						<p class="news-gallery__item__excerpt">A colossus has landed in London: A cast of what was one of the biggest animals ever to walk the Earth is now on show at
+						the Natural History Museum.</p>
+						<a href="article-news-01.html" class="news-gallery__item__link" role="button">Leer más</a>
+					</div>
+				</article>
+			</td>
+			<td>
+				<article class="news-gallery__item">
+					<div class="news-gallery__item__image">
+						<img src='images/129216734_190129cdea4a0f7859f7386e9b8b6871e70f5e12.jpg' alt=''/>
+					</div>
+					<div class="news-gallery__item__content">
+						<h2 class="news-gallery__item__title">Antarctic ocean currents heading for collapse - report</h2>
+						<p class="news-gallery__item__excerpt">Rapidly melting Antarctic ice is causing a dramatic slowdown in deep ocean currents and could have a disastrous effect on the climate, a new report warns.</p>
+						<a href="article-news-02.html" class="news-gallery__item__link" role="button">Leer más</a>
+					</div>
+				</article>
+			</td>
+			<td>
+				<article class="news-gallery__item">
+					<div class="news-gallery__item__image">
+						<img src='images/cnn.com_cnnnext_dam_assets_230331100821-01b-philippines-vogue-oldest-cover-model-crop.jpg' alt=''/>
+					</div>
+					<div class="news-gallery__item__content">
+						<h2 class="news-gallery__item__title">
+							A 106-year-old from the Philippines is Vogue's oldest ever cover model
+						</h2>
+						<p class="news-gallery__item__excerpt">Whang-Od — also known as Maria Oggay — has been perfecting the art of hand-tapping tattoos since she was a teen, learning under her father's instruction.</p>
+						<a href="article-news-03.html" class="news-gallery__item__link" role="button">Leer más</a>
+					</div>
+				</article>
+			</td>
+		</tr>
+	</table>
+</main> <!-- / .news-gallery -->
+
+<footer class="footer">
+	<div class="container">
+		<div class="grid">
+			<div class="copyright">
+				Copyright ©
+				<script>
+					var date = new Date();
+					var year = date.getFullYear();
+					document.write(year);
+				</script>
+				El Faro. Todos los derechos reservados.
+			</div>
+			<div class="logo-mini">
+				<a href="index.html"><img src='https://dummyimage.com/100x20.jpg?text=El%20Faro' alt=''/></a>
+			</div>
+		</div>
+	</div>
+</footer> <!-- / .footer -->
+
+</body>
+</html>

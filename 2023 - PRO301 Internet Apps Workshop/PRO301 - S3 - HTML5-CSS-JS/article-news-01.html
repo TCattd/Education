@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ruth Morales, Karen Contreras, Esteban Cuevas">
+	<title>El Faro</title>
+	<!-- Pico.CSS @ https://picocss.com -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">-->
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="./css/global.css">
+	<!-- Global JS -->
+	<script src="./js/global.js" defer></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header custom-container">
+	<div class="custom-grid">
+		<div class="custom-column logo">
+			<a href="index.html">
+				<img src="images/elfaro-logo.png" alt="El Faro Logo" width="100" />
+				<span>El Faro</span>
+			</a>
+		</div>
+		<nav class="custom-column menu">
+			<ul>
+				<li><a href="index.html" role="button">Inicio</a></li>
+				<li><a href="index-sports.html" role="button">Deportes</a></li>
+				<li><a href="index-business.html" role="button">Negocios</a></li>
+			</ul>
+		</nav>
+	</div>
+</header> <!-- / .header -->
+
+<!-- Main Article -->
+<main class="main custom-container">
+	<h1>Noticias</h1>
+
+	<div class="custom-grid">
+		<article class="article custom-column">
+			<div class="article__header">
+				<h1 class="article__title">Gigantic dinosaur skeleton on show in London</h1>
+				<div class="article__meta">
+					<span class="article__author">Por <a href="#">John Doe</a></span>
+					<span class="article__category">/ Categoría: Noticias</span>
+				</div>
+			</div>
+			<div class="article__image">
+				<img src="images/129177060_230327_077-credit-trustees-of-the-nhm-london.jpg" alt="">
+			</div>
+			<div class="article__content">
+				<p>
+					A colossus has landed in London: A cast of what was one of the biggest animals ever to walk the Earth is now on show at the Natural History Museum.
+				</p>
+				<p>
+					Patagotitan was a dinosaur that lived 100 million years ago in South America.
+				</p>
+				<p>
+					Measuring some 37m (121ft) from nose to tail, the beast could have weighed up to 60 or 70 tonnes in life.
+				</p>
+				<p class="video">
+					<video controls>
+						<source src="videos/all-over-in-10-seconds.mp4" type="video/mp4">
+						Tu navegador no soporta el elemento video. Descarga el video <a href="videos/all-over-in-10-seconds.mp4">aquí</a>.
+					</video>
+				</p>
+				<p>
+					The museum has brought over not just a representative skeleton but some of the real fossil bones first discovered in Argentina in 2014.
+				</p>
+				<p>
+					The largest is a 2.4m-long femur, or thigh bone. It's been erected upright to give visitors an extraordinary selfie opportunity.
+				</p>
+			</div>
+			<div class="source">
+				<a href="https://www.bbc.com/news/science-environment-65094602" target="_blank">Fuente: BBC</a>
+			</div>
+		</article>
+	</div>
+</main> <!-- / .main -->
+
+<!-- Footer -->
+<footer class="footer custom-container custom-grid">
+	<div class="custom-column copyright">
+		Copyright ©
+		<script>
+			/* Write the current year, dinamically */
+			var date = new Date();
+			var year = date.getFullYear();
+			document.write(year);
+		</script>
+		El Faro. Todos los derechos reservados.
+	</div>
+	<div class="custom-column logo-mini">
+		<a href="index.html">
+			<img src='https://dummyimage.com/100x20.jpg?text=El%20Faro' alt='Logo El Faro' />
+		</a>
+	</div>
+</footer> <!-- / .footer -->
+
+</body>
+</html>

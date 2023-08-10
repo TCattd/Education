@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ruth Morales, Karen Contreras, Esteban Cuevas">
+	<title>El Faro</title>
+	<!-- Bulma CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="./css/global.css">
+	<!-- Global JS -->
+	<script src="./js/global.js" defer></script>
+</head>
+<body class="article">
+
+<!-- Header -->
+<header class="header container">
+	<div class="custom-grid">
+		<div class="custom-column logo">
+			<a href="index.html">
+				<img src="images/elfaro-logo.png" alt="El Faro Logo" width="100" />
+				<span>El Faro</span>
+			</a>
+		</div>
+		<div class="custom-column clock">
+			<span id="current-date"></span>, <span id="current-time"></span>
+		</div>
+		<nav class="custom-column menu navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			<div id="navbarContent" class="navbar-menu">
+				<div class="navbar-start">
+					<div class="navbar-item"><a href="index.html" role="button">Inicio</a></div>
+					<div class="navbar-item"><a href="index.html?category=sports" role="button">Deportes</a></div>
+					<div class="navbar-item"><a href="index.html?category=business" role="button">Negocios</a></div>
+					<div class="navbar-item"><a href="#" role="button" id="add-article">Agregar Artículo</a></div>
+					<div class="navbar-item"><a href="contact.html" role="button">Contacto</a></div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header> <!-- / .header -->
+
+<!-- Main Article -->
+<main class="main container">
+	<h1 id="category-name"></h1>
+	<div class="custom-grid" id="article-content">
+		<!-- Populated via JS -->
+	</div> <!-- / #article-content -->
+</main> <!-- / .main -->
+
+<!-- Footer -->
+<footer class="footer container custom-grid">
+	<div class="custom-column copyright">
+		Copyright © <span id="footer-year"></span> El Faro. Todos los derechos reservados.
+	</div>
+	<div class="custom-column logo-mini">
+		<a href="index.html">
+			<img src='https://dummyimage.com/100x20.jpg?text=El%20Faro' alt='Logo El Faro' />
+		</a>
+	</div>
+</footer> <!-- / .footer -->
+
+<div class="modal" id="add-article-modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Agregar Artículo</p>
+			<button class="delete add-article-close" aria-label="close"></button>
+		</header>
+		<form id="add-article-form">
+			<section class="modal-card-body">
+				<div class="field">
+					<label class="label">Categoría</label>
+					<div class="control">
+						<div class="select">
+							<select id="add-article-category">
+								<option value="news">Noticias</option>
+								<option value="sports">Deportes</option>
+								<option value="business">Negocios</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Título</label>
+					<div class="control">
+						<input class="input" type="text" placeholder="Título del artículo" id="add-article-title">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Extracto</label>
+					<div class="control">
+						<textarea class="textarea" placeholder="Extracto del artículo"
+							id="add-article-excerpt"></textarea>
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Imagen</label>
+					<div class="control">
+						<input class="input" type="text" placeholder="URL de la imagen" id="add-article-image">
+						Ejemplo: https://picsum.photos/800/600
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Contenido</label>
+					<div class="control">
+						<textarea class="textarea" placeholder="Contenido del artículo" id="add-article-content"></textarea>
+						Acepta HTML. Encierra cada párrafo en su tag correspondiente: <code>&lt;p&gt;&lt;/p&gt;</code>
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Fuente</label>
+					<div class="control">
+						<input class="input" type="text" placeholder="Nombre de la Fuente" id="add-article-source-name">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">URL de la Fuente</label>
+					<div class="control">
+						<input class="input" type="url" placeholder="URL de la Fuente" id="add-article-source-url">
+					</div>
+				</div>
+			</section>
+			<footer class="modal-card-foot">
+				<button class="button is-success" id="add-article-save">Guardar Artículo</button>
+				<button class="button is-success add-article-close" aria-label="close">Cancelar</button>
+			</footer>
+		</form>
+	</div>
+</div> <!-- / #add-article-modal -->
+
+<template id="article-template">
+	<article class="article custom-column card" id="article-${id}">
+		<div class="article__header">
+			<h1 class="article__title">${title}</h1>
+			<div class="article__meta">
+				<span class="article__category">Categoría: ${category}</span>
+			</div>
+		</div>
+		<div class="article__image">
+			<img src='${image}' alt='' />
+		</div>
+		<div class="article__content card-content content">
+			${content}
+		</div>
+		<div class="source">
+			Fuente: <a href="${source_url}" target="_blank">${source_name}</a>
+		</div>
+	</article>
+</template> <!-- / #article-card-template -->
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ruth Morales, Karen Contreras, Esteban Cuevas">
+	<title>El Faro</title>
+	<!-- Pico.CSS @ https://picocss.com -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">-->
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header container">
+	<div class="grid">
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/elfaro-logo.png" alt="El Faro Logo" width="100" />
+				<span>El Faro</span>
+			</a>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html" role="button">Inicio</a></li>
+				<li><a href="index-sports.html" role="button">Deportes</a></li>
+				<li><a href="index-business.html" role="button">Negocios</a></li>
+			</ul>
+		</nav>
+	</div>
+</header> <!-- / .header -->
+
+<!-- Main Article -->
+<main class="main container">
+	<h1>Noticias</h1>
+	<div class="grid">
+		<article class="article">
+			<div class="article__header">
+				<h1 class="article__title">Gigantic dinosaur skeleton on show in London</h1>
+				<div class="article__meta">
+					<span class="article__author">Por <a href="#">John Doe</a></span>
+					<span class="article__category">/ Categoría: Noticias</span>
+				</div>
+			</div>
+			<div class="article__image">
+				<img src="images/129216734_190129cdea4a0f7859f7386e9b8b6871e70f5e12.jpg" alt="">
+			</div>
+			<div class="article__content">
+				<p>
+					Rapidly melting Antarctic ice is causing a dramatic slowdown in deep ocean currents and could have a disastrous effect on the climate, a new report warns.
+				</p>
+				<p>
+					The deep-water flows which drive ocean currents could decline by 40% by 2050, a team of Australian scientists says. The currents carry vital heat, oxygen, carbon and nutrients around the globe.
+				</p>
+				<p>
+					Previous research suggests a slowdown in the North Atlantic current could cause Europe to become colder. The study, published in the journal Nature, also warns the slowdown could reduce ocean's ability to absorb carbon
+					dioxide from the atmosphere.
+				</p>
+				<p class="video">
+					<video controls>
+						<source src="videos/all-over-in-10-seconds.mp4" type="video/mp4">
+						Tu navegador no soporta el elemento video. Descarga el video <a href="videos/all-over-in-10-seconds.mp4">aquí</a>.
+					</video>
+				</p>
+				<p>
+					The report outlines how the Earth's network of ocean currents are part driven by the downwards movement of cold, dense saltwater towards the sea bed near Antarctica. But as fresh water from the ice cap melts, sea water becomes less salty and dense, and the downwards movement slows.
+				</p>
+				<p>
+					These deep ocean currents, or "overturnings", in the northern and southern hemispheres have been relatively stable for thousands of years, scientists say, but they are now being disrupted by the warming climate.
+				</p>
+			</div>
+			<div class="source">
+				<a href="https://www.bbc.com/news/world-australia-65120327" target="_blank">Fuente: BBC</a>
+			</div>
+		</article>
+	</div>
+</main> <!-- / .main -->
+
+<footer class="footer">
+	<div class="container">
+		<div class="grid">
+			<div class="copyright">
+				Copyright ©
+				<script>
+					var date = new Date();
+					var year = date.getFullYear();
+					document.write(year);
+				</script>
+				El Faro. Todos los derechos reservados.
+			</div>
+			<div class="logo-mini">
+				<a href="index.html"><img src='https://dummyimage.com/100x20.jpg?text=El%20Faro' alt='' /></a>
+			</div>
+		</div>
+	</div>
+</footer> <!-- / .footer -->
+
+</body>
+</html>

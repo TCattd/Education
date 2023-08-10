@@ -1,0 +1,244 @@
+/* Main variables for our CSS */
+:root {
+	--color-primary: #F9F5EB;
+	--color-secondary: #E4DCCF;
+	--color-accent: #EA5455;
+	--color-accent-light: #F7AFAF;
+	--color-blue: #002B5B;
+	--color-blue-light: #A9D0F5;
+	--color-grey-dark: #333333;
+	--color-grey-light: #F5F5F5;
+	--color-grey: #C9D2D0;
+	--color-brown: #31231E;
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+	--font-family: 'Roboto', sans-serif;
+}
+
+html {
+	font-size: 100%;
+	font-size: 62.5%; /* To make 1rem = 10px */
+	box-sizing: border-box; /* To make sure padding and margin are included in the width and height */
+	background-color: var(--color-grey-light);
+	font-family: var(--font-family); /* Set the font family to Roboto for the whole page */
+}
+
+body {
+	color: var(--color-grey-dark);
+	font-size: 1.5rem;
+}
+
+/* Links. Exclude logo from it */
+a:not(.logo>a) {
+	color: var(--color-accent);
+	text-decoration: underline;
+}
+
+/* Links on hover */
+a:hover {
+	color: var(--color-blue);
+	font-weight: bold;
+	text-decoration: none !important; /* To remove the underline on hover. We need the important, to override PicoCSS definition */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	color: var(--color-blue);
+}
+
+/* Paragraphs */
+p {
+	color: var(--color-grey-dark);
+}
+
+/* Custom container, to center the content and limit the width */
+.custom-container, .container {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header styles */
+header {
+	margin-bottom: 20px !important; /* To override PicoCSS definition */
+}
+
+header .logo span {
+	font-size: 3rem;
+	margin: 0 0 0 20px;
+	color: var(--color-blue);
+}
+
+header .clock {
+	font-size: 1.4rem;
+}
+
+/* Navbar */
+header .menu {
+	display: grid; /* To make the menu items align to the right */
+	justify-content: end;
+	background-color: transparent;
+}
+
+header .menu a {
+	font-size: 1.5rem;
+	color: var(--color-white);
+	background-color: var(--color-grey-dark);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+header .navbar-item {
+	margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-grey);
+	color: var(--color-brown);
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+	line-height: 1rem;
+	padding: 0 20px;
+	margin-top: 40px !important; /* To override PicoCSS definition */
+}
+
+/* Article gallery */
+.news-gallery h1 {
+	font-size: 1.8rem;
+}
+
+.news-gallery .counter {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+/* Article card styles */
+.article {
+	padding: 20px;
+}
+
+.article .article__meta {
+	font-size: 1.4rem;
+}
+
+article h1, article h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* To make the article image responsive */
+.article .article__image {
+	display: grid;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.article .article__content p {
+	font-size: 1.5rem;
+}
+
+.article .article__content .video {
+	display: grid;
+	justify-content: center;
+}
+
+/* To make the video responsive */
+.article .article__content .video video {
+	max-width: 100%;
+}
+
+/* Article card */
+.news-gallery__item {
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.news-gallery__item .news-gallery__item__link {
+	font-size: 1.5rem;
+	color: var(--color-grey-dark);
+}
+
+.news-gallery__item .news-gallery__item__excerpt {
+	font-size: 1.4rem;
+}
+
+/* Background changes on hover, required for the assignment */
+.news-gallery__item:hover {
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
+
+/* Companion to the previous rule, to change the color of the title and excerpt on hover */
+.news-gallery__item:hover h2, .news-gallery__item:hover p, .news-gallery__item:hover a {
+	color: var(--color-white);
+}
+
+/* Our custom mini-grid using flexbox */
+.custom-grid {
+	display: flex;
+	margin: 0 auto;
+}
+
+.custom-column {
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin: 4px;
+}
+
+/* Tablets and mobiles */
+/* When the screen is smaller than 1110px, change the flexbox to a block display and/or column direction, to stack the columns */
+@media (max-width: 1110px) {
+	.custom-grid {
+		display: block;
+		flex-direction: column;
+	}
+}
+
+/* Contact form */
+#contact {
+	margin-top: 20px;
+}
+
+#contact label {
+	font-size: 1.4rem;
+}
+
+#contact .button {
+	font-size: 1.4rem;
+	background-color: var(--color-grey-dark);
+	text-decoration: underline;
+}
+
+#contact .button:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#contact input, #contact textarea {
+	font-size: 1.4rem;
+}
+
+/* Modal form */
+.modal .modal-card {
+	background-color: var(--color-white);
+}
+
+.modal .modal-card-body label {
+	font-size: 1.4rem;
+}
+
+.modal .modal-card-body input, .modal .modal-card-body textarea {
+	font-size: 1.4rem;
+}
+
+.modal .modal-card-foot .button {
+	font-size: 1.4rem;
+	background-color: var(--color-grey-dark);
+	text-decoration: underline;
+}

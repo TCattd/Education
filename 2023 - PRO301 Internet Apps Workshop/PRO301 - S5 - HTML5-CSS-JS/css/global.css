@@ -1,0 +1,406 @@
+/* Main variables for our CSS */
+:root {
+	--color-primary: #F9F5EB;
+	--color-secondary: #E4DCCF;
+	--color-accent: #EA5455;
+	--color-accent-light: #F7AFAF;
+	--color-blue: #002B5B;
+	--color-blue-light: #A9D0F5;
+	--color-grey-dark: #333333;
+	--color-grey-light: #F5F5F5;
+	--color-grey: #C9D2D0;
+	--color-light-grey: #ebebec;
+	--color-brown: #31231E;
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+	--font-family: 'Roboto', sans-serif;
+}
+
+html {
+	font-size: 100%;
+	font-size: 62.5%; /* To make 1rem = 10px */
+	box-sizing: border-box; /* To make sure padding and margin are included in the width and height */
+	background-color: var(--color-grey-light);
+	font-family: var(--font-family); /* Set the font family to Roboto for the whole page */
+}
+
+body {
+	background-color: var(--color-grey-light);
+	color: var(--color-grey-dark);
+	font-size: 1.5rem;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+}
+
+/* Links. Exclude logo from it */
+a:not(.logo>a) {
+	color: var(--color-accent);
+	/*text-decoration: underline;*/
+}
+
+/* Links on hover */
+a:hover {
+	color: var(--color-blue);
+	/*font-weight: bold;*/
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	color: var(--color-blue);
+}
+
+/* Paragraphs */
+p {
+	color: var(--color-grey-dark);
+}
+
+/* Custom container, to center the content and limit the width */
+/*.custom-container, .container {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 20px;
+}*/
+
+/* Header styles */
+header {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: var(--color-light-grey);
+}
+
+header .logo {
+	z-index: 1;
+}
+
+header .logo .subtitle {
+	font-size: 2rem;
+	color: var(--color-blue);
+	margin-left: 18px;
+}
+
+header .clock {
+	font-size: 1.2rem;
+}
+
+/* Navbar */
+header .menu {
+	/*display: grid;*/
+	/*justify-content: end;*/
+}
+
+header .menu li {
+	margin: 0 5px;
+}
+
+header .menu a {
+	font-size: 1.5rem;
+	color: var(--color-white);
+	background-color: var(--color-grey-dark);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+header .menu li a:hover {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+header .navbar-item {
+	margin: 10px 0;
+}
+
+header .menu .dropdown-menu {
+}
+
+header .menu .dropdown-menu a {
+	min-width: 100px;
+	padding: 10px 20px;
+	margin: 10px;
+	background-color: var(--color-grey-light);
+	color: var(--color-grey-dark);
+}
+/* Breadcumb styles */
+.breadcrumb {
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.breadcrumb h1 {
+	display: inline;
+}
+
+.breadcrumb .counter {
+	display: inline;
+	font-size: 1.2rem;
+	padding-left: 10px;
+}
+
+/* Footer styles */
+.footer {
+	background-color: var(--color-light-grey);
+	color: var(--color-brown);
+	height: 120px;
+	font-size: 1.2rem;
+	margin-top: 20px !important;
+	margin-bottom: 20px;
+}
+
+.footer .copyright img {
+	margin-right: 10px;
+}
+
+/* Article gallery */
+.news-gallery h1 {
+	font-size: 1.8rem;
+}
+
+.articles-gallery [class*="col-"] {
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+
+.article-item {
+	height: -moz-available;
+	height: -webkit-fill-available;
+	height: fill-available;
+}
+
+/* Article card styles */
+.article-container {
+	padding: 20px;
+}
+
+.article-container .article__header {
+	font-size: 1.4rem;
+	padding: 20px;
+}
+
+.article-container h1, .article-container h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.article-container .article__content {
+	padding: 20px;
+}
+
+/* To make the article image responsive */
+.article-container .article__content img {
+	display: grid;
+	justify-content: center;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.article-container .article__content p {
+	font-size: 1.5rem;
+}
+
+.article-container .article__content .video {
+	display: grid;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+/* To make the video responsive */
+.article-container .article__content .video video {
+	max-width: 100%;
+}
+
+.article-container .article__content .source {
+	padding: 20px;
+}
+
+/* Article card */
+.news-gallery__item {
+	/*padding: 10px;
+	margin: 10px 0;*/
+	background-color: transparent;
+}
+
+.news-gallery__item .article-item {
+	background-color: var(--color-white);
+}
+
+.news-gallery__item img {
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
+.news-gallery__item .news-gallery__item__link {
+	font-size: 1.4rem;
+	background-color: var(--color-light-grey);
+	border-color: var(--color-light-grey);
+	color: var(--color-grey-dark);
+}
+
+.news-gallery__item .news-gallery__item__link:hover {
+	background-color: var(--color-accent);
+	color: var(--color-white);}
+
+.news-gallery__item .news-gallery__item__excerpt {
+	font-size: 1.4rem;
+}
+
+/* Background changes on hover, required for the assignment */
+.news-gallery__item:hover {
+	/*background-color: var(--color-black);*/
+	/*color: var(--color-white);*/
+}
+
+/* Companion to the previous rule, to change the color of the title and excerpt on hover */
+.news-gallery__item:hover h2, .news-gallery__item:hover p, .news-gallery__item:hover a {
+	/*color: var(--color-white);*/
+}
+
+/* Our custom mini-grid using flexbox */
+/*.custom-grid {
+	display: flex;
+	margin: 0 auto;
+}
+
+.custom-column {
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin: 4px;
+}*/
+
+/* Tablets and mobiles */
+/* When the screen is smaller than 1110px, change the flexbox to a block display and/or column direction, to stack the columns */
+/*@media (max-width: 1110px) {
+	.custom-grid {
+		display: block;
+		flex-direction: column;
+	}
+}*/
+
+/* Contact form */
+#contact {
+	margin-top: 20px;
+}
+
+#contact label {
+	font-size: 1.4rem;
+}
+
+#contact .send-form-container {
+	display: grid;
+	justify-content: center;
+}
+
+#contact .btn {
+	font-size: 1.4rem;
+	background-color: var(--color-light-grey);
+	border-color: var(--color-light-grey);
+	color: var(--color-grey-dark);
+	width: 200px;
+	margin: 0 auto;
+}
+
+#contact .btn:hover {
+	background-color: var(--color-accent);
+	border-color: var(--color-grey-dark);
+	color: var(--color-white);
+}
+
+#contact input, #contact textarea {
+	font-size: 1.4rem;
+}
+
+/* Modal form */
+.modal .modal-card {
+	background-color: var(--color-white);
+}
+
+.modal .modal-body label {
+	font-size: 1.4rem;
+}
+
+.modal .modal-body input, .modal .modal-body textarea {
+	font-size: 1.4rem;
+}
+
+.modal .modal-footer .button {
+	font-size: 1.4rem;
+	background-color: var(--color-grey-dark);
+	border-color: var(--color-grey-light);
+}
+
+.modal .modal-footer .btn-primary {
+	background-color: var(--color-accent);
+	border-color: var(--color-grey-light);
+}
+
+/* Featured Carousel */
+.articles-featured {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.articles-featured .carousel-item .carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+}
+
+.articles-featured .carousel-item .carousel-caption h1 {
+	font-size: 3rem;
+	color: var(--color-white);
+}
+
+.articles-featured .carousel-item .carousel-image {
+	aspect-ratio: 16/6;
+	object-fit: cover;
+}
+
+/* carousel-caption responsive */
+@media (max-width: 768px) {
+	.articles-featured .carousel-item .carousel-caption h1 {
+		font-size: 1.6rem;
+	}
+}
+
+/* Classifieds */
+.classifieds {
+	margin: 10px 0;
+}
+
+.classifieds h1 {
+	font-size: 1.8rem;
+	margin-left: 15px;
+}
+
+.classifieds .card {
+	background-color: transparent;
+	border-color: var(--color-white);
+}
+
+.classifieds .card .btn {
+	font-size: 1.4rem;
+	background-color: var(--color-light-grey);
+	border-color: var(--color-light-grey);
+	color: var(--color-grey-dark);
+}
+
+.classifieds .card .btn:hover {
+	background-color: var(--color-accent);
+	border-color: var(--color-grey-dark);
+	color: var(--color-white);
+}
+
+.classified-container .contact_info {
+	padding: 20px;
+}
+
+/* Clear localStorage */
+.clearLocalStorage {
+	margin: 20px 0;
+}
+
+.clearLocalStorage a {
+	color: var(--color-white) !important;
+}

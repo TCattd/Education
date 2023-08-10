@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ruth Morales, Karen Contreras, Esteban Cuevas">
+	<title>El Faro</title>
+	<!-- Pico.CSS @ https://picocss.com -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">-->
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="./css/global.css">
+	<!-- Global JS -->
+	<script src="./js/global.js" defer></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header custom-container">
+	<div class="custom-grid">
+		<div class="custom-column logo">
+			<a href="index.html">
+				<img src="images/elfaro-logo.png" alt="El Faro Logo" width="100" />
+				<span>El Faro</span>
+			</a>
+		</div>
+		<nav class="custom-column menu">
+			<ul>
+				<li><a href="index.html" role="button">Inicio</a></li>
+				<li><a href="index-sports.html" role="button">Deportes</a></li>
+				<li><a href="index-business.html" role="button">Negocios</a></li>
+			</ul>
+		</nav>
+	</div>
+</header> <!-- / .header -->
+
+<!-- Main Article -->
+<main class="main custom-container">
+	<h1>Deportes</h1>
+
+	<div class="custom-grid">
+		<article class="article custom-column">
+			<div class="article__header">
+				<h1 class="article__title">Wimbledon permitirá competir a rusos y bielorrusos</h1>
+				<div class="article__meta">
+					<span class="article__author">Por <a href="#">John Doe</a></span>
+					<span class="article__category">/ Categoría: Deportes</span>
+				</div>
+			</div>
+			<div class="article__image">
+				<img src="images/wimbledon-i.jpeg" alt="">
+			</div>
+			<div class="article__content">
+				<p>
+					Infinidad de idas y vueltas se dieron a lo largo del último año a raíz del veto de Wimbledon para que rusos y
+					bielorrusos compitan libremente tras la invasión a Ucrania. El Grand Slam londinense fue el único de los cuatro en
+					llevar a cabo esta medida y eso les costó una sanción millonaria por parte de la ATP y la WTA, además de que el torneo
+					no repartió puntos.
+				</p>
+				<p>
+					"Nuestra intención actual es aceptar inscripciones de jugadores rusos y bielorrusos sujeto a que compitan como atletas
+					'neutrales' y cumplan con las condiciones apropiadas. Estos prohibirán las expresiones de apoyo a la invasión rusa de
+					Ucrania en varias formas y prohibirán la entrada de jugadores que reciban fondos de los estados rusos y/o bielorrusos
+					(incluido el patrocinio de empresas operadas o controladas por los estados) en relación con su participación en The
+					Championships", expresó el comunicado oficial.
+				</p>
+				<p class="video">
+					<video controls>
+						<source src="videos/all-over-in-10-seconds.mp4" type="video/mp4">
+						Tu navegador no soporta el elemento video. Descarga el video <a href="videos/all-over-in-10-seconds.mp4">aquí</a>.
+					</video>
+				</p>
+				<p>
+					Andy Murray, exnúmero uno del mundo, dio su parecer en las últimas horas y parece que no estaba equivocado. La sanción
+					impuesta sería cosa del pasado y todo volvería a la "normalidad".
+				</p>
+				<p>
+					Para aumentar la presión sobre el prestigioso torneo, se supo que la ATP y la WTA amenazaron con retirar la licencia a
+					los torneos previos que se disputan en suelo británico, como Queen´s, lo que supondría un mazazo económico muy
+					importante para la federación británica de tenis.
+				</p>
+			</div>
+			<div class="source">
+				<a href="https://www.espn.cl/tenis/nota/_/id/11731137/wimbledon-permitira-competir-a-rusos-y-bielorrusos" target="_blank">Fuente: ESPN</a>
+			</div>
+		</article>
+	</div>
+</main> <!-- / .main -->
+
+<!-- Footer -->
+<footer class="footer custom-container custom-grid">
+	<div class="custom-column copyright">
+		Copyright ©
+		<script>
+			/* Write the current year, dinamically */
+			var date = new Date();
+			var year = date.getFullYear();
+			document.write(year);
+		</script>
+		El Faro. Todos los derechos reservados.
+	</div>
+	<div class="custom-column logo-mini">
+		<a href="index.html">
+			<img src='https://dummyimage.com/100x20.jpg?text=El%20Faro' alt='Logo El Faro' />
+		</a>
+	</div>
+</footer> <!-- / .footer -->
+
+</body>
+</html>
