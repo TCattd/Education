@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <RelativeLayout tools:context=".MenuActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        >
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Pedidos ACME"
+            android:textSize="24sp" />
+
+        <!-- Greeting -->
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Hola"
+        android:textSize="18sp" />
+
+        <!-- Logout button -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desconectar"
+            android:layout_below="@+id/textViewWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- Physical store location label -->
+        <TextView
+            android:id="@+id/textViewStoreLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicación de la tienda física"
+            android:textSize="18sp"
+            android:layout_below="@+id/buttonLogout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Physical store location: latitude -->
+        <EditText
+            android:id="@+id/editTextStoreLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewStoreLocation"
+            android:layout_marginTop="8dp"
+            android:text="-35.426472"
+            tools:text="-35.426472"
+            android:inputType="numberSigned|numberDecimal"
+            />
+
+        <!-- Physical store location: longitude -->
+        <EditText
+            android:id="@+id/editTextStoreLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextStoreLat"
+            android:layout_marginTop="8dp"
+            android:text="-71.666039"
+            tools:text="-71.666039"
+            android:inputType="numberSigned|numberDecimal"
+            />
+
+        <!-- Label: Delivery location latitude -->
+        <TextView
+            android:id="@+id/textViewDeliveryLatLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitud para punto de entrega:"
+            android:layout_below="@+id/editTextStoreLong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Delivery location latitude -->
+        <EditText
+            android:id="@+id/editTextDeliveryLat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la latitud"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_below="@+id/textViewDeliveryLatLabel"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Label: Delivery location longitude -->
+        <TextView
+            android:id="@+id/textViewDeliveryLongLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitud para punto de entrega:"
+            android:layout_below="@+id/editTextDeliveryLat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Delivery location longitude -->
+        <EditText
+            android:id="@+id/editTextDeliveryLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la longitud"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_below="@+id/textViewDeliveryLongLabel"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Button to use current location -->
+        <Button
+            android:id="@+id/buttonUseCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usar ubicación actual"
+            android:layout_below="@+id/editTextDeliveryLong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Box for purchase amount -->
+        <LinearLayout
+            android:id="@+id/llPurchaseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonUseCurrentLocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Label for purchase amount -->
+            <TextView
+                android:id="@+id/textViewPurchaseAmountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto de compra:"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"/>
+
+            <!-- Currency symbol -->
+            <TextView
+                android:id="@+id/textViewCurrencySymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+
+            <!-- Purchase amount input -->
+            <EditText
+                android:id="@+id/editTextPurchaseAmount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el monto"
+                android:inputType="number"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <!-- Box for buttons -->
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llPurchaseAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Button: Clear (left) with 20px right margin -->
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp" />
+
+            <!-- Button: Calculate delivery (right) with 20px left margin -->
+            <Button
+                android:id="@+id/buttonCalculateDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular despacho"
+                android:layout_weight="1"
+                android:layout_marginLeft="20px" />
+        </LinearLayout>
+
+        <!-- Box for result -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llButtons"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <!-- Card for result -->
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:padding="16dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Spacer -->
+        <View
+            android:id="@+id/viewSpacer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cardViewResult"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</ScrollView>

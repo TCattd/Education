@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236996174806",
+    "project_id": "pedidos-acme",
+    "storage_bucket": "pedidos-acme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236996174806:android:df68bc293cbd0b96633a77",
+        "android_client_info": {
+          "package_name": "xyz.actitud.pedidosacme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCpheSZrtDZ5B7H2d9X5xCrSkUCHn_mtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
